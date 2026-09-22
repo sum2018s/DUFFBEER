@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About the fictional Duff Beer fan-made connection site.">
+  <title>About Us | DUFF BEER</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Duff Beer home">
+      <span class="brand-bottle" aria-hidden="true">D</span>
+      <span class="brand-logo">DUFF BEER</span>
+    </a>
+    <a class="btn" href="index.html">HOME</a>
+  </header>
+
+  <main>
+    <section class="story-section" style="min-height:calc(100vh - 78px);align-items:center;">
+      <div class="story-card">
+        <p class="eyebrow">OUR STORY</p>
+        <h1>About Us</h1>
+        <p>
+          DUFF BEER started as a fun idea between a couple of friends who shared a love
+          for creative design, pop culture, and building something together. What began
+          as a small project quickly turned into a fictional business concept where we
+          could combine our ideas and create a brand that felt bold, memorable, and fun.
+        </p>
+        <p>
+          Each friend brought something different to the table. We worked together on
+          the look of the brand, the website, and the ideas behind the business. Along
+          the way, we learned that a good business is not just about having a cool idea;
+          it is also about teamwork, creativity, and being willing to keep improving.
+        </p>
+        <p>
+          Today, this site represents what can happen when a couple of friends take an
+          idea and turn it into a project they can be proud of. DUFF BEER is a fictional,
+          fan-made web design concept inspired by <em>The Simpsons</em>.
+        </p>
+        <p class="small-note">
+          This is a fictional fan-site concept and does not sell or distribute alcohol.
+        </p>
+        <a class="btn hero-btn" href="index.html">BACK TO HOME</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript keeps the About Us page navigation simple and easy to expand later.
+    document.querySelector('.brand').addEventListener('click', (event) => {
+      event.preventDefault();
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
