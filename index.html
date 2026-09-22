@@ -50,7 +50,7 @@
           <h2>DUFF<br><span>BEER</span></h2>
           <p class="tagline">The Beer for Everyone.</p>
           <p class="subtag">Great taste. Good times. Duff.</p>
-          <a class="btn hero-btn" href="#products">EXPLORE DUFF</a>
+          <button class="btn hero-btn" id="exploreDuffBtn" type="button">EXPLORE DUFF</button>
         </div>
         <div class="can-stage" aria-label="Decorative rotating Duff can">
           <div class="can">
@@ -151,6 +151,10 @@
     }
 
     yesBtn.addEventListener('click', enterSite);
+
+    document.getElementById('exploreDuffBtn').addEventListener('click', () => {
+      window.location.href = 'about.html';
+    });
     noBtn.addEventListener('click', () => {
       message.textContent = 'Sorry, you must be 21 or older to enter.';
       message.classList.add('error');
